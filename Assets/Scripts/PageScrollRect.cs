@@ -1,3 +1,6 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -9,8 +12,15 @@ public class PageScrollRect : ScrollRect
     private float pageWidth;
     // 前回のページIndex. 最も左を0とする.
     private int prevPageIndex = 0;
+    [SerializeField] GameObject[] IconPosition;
+    [SerializeField] GameObject highlightIcon, normalIcon;
+    HighlightPageIcon highlightPageIcon;
 
-    public int pageIndex;
+    int absPageIndex;
+    GameObject InstantiateObj;
+
+    //public int pageIndex;
+
 
     protected override void Awake()
     {
@@ -38,7 +48,7 @@ public class PageScrollRect : ScrollRect
 
         // スナップさせるページを決定する.
         // スナップさせるページのインデックスを決定する.
-        pageIndex = Mathf.RoundToInt(content.anchoredPosition.x / pageWidth);
+        int pageIndex = Mathf.RoundToInt(content.anchoredPosition.x / pageWidth);
         // ページが変わっていない且つ、素早くドラッグした場合.
         // ドラッグ量の具合は適宜調整してください.
         if (pageIndex == prevPageIndex && Mathf.Abs(eventData.delta.x) >= 5)
@@ -54,5 +64,37 @@ public class PageScrollRect : ScrollRect
         // 「ページが変わっていない」の判定を行うため、前回スナップされていたページを記憶しておく.
         prevPageIndex = pageIndex;
         Debug.Log(pageIndex);
+        ChangeIcon(pageIndex);
+        //gameManager.GetComponent<HighlightPageIcon>().ChangeIcon(pageIndex);
+    }
+
+    public void ChangeIcon(int pageIndex)
+    {
+        HighlightPageIcon highlightPageIcon = gameObject.GetComponent<HighlightPageIcon>();
+        //int pageIndex = pageScrollRect.pageIndex;
+        Debug.Log(pageIndex);
+
+        Vector3 fieldPos;
+        //DrawNormalIcon();
+        absPageIndex = Math.Abs(pageIndex);
+
+        if (pageIndex <= 0)
+        {
+            fieldPos = highlightPageIcon.IconPosition[0].transform.position;
+        }
+        else
+        {
+            fieldPos = highlightPageIcon.IconPosition[absPageIndex].transform.position;
+        }
+        InstantiateObj = Instantiate(highlightPageIcon.highlightIcon, fieldPos, Quaternion.identity);
+        InstantiateObj.renderer.sortingOrder = 2;
+    }
+    void DrawNormalIcon()
+    {
+        for (int i = 0; i < highlightPageIcon.IconPosition.Length; i++)
+        {
+            Vector3 fieldPos = highlightPageIcon.IconPosition[i].transform.position;
+            Instantiate(highlightPageIcon.normalIcon, fieldPos, Quaternion.identity);
+        }
     }
 }
