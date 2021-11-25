@@ -5,11 +5,12 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class ToExplanationScene : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public void OnClickToExplanationButton()
     {
         SceneManager.LoadScene("ExplanationScene");
     }
+
 
     // Update is called once per frame
 

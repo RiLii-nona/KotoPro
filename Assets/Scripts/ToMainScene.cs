@@ -6,12 +6,11 @@ using UnityEngine.UI;
 
 public class ToMainScene : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public void OnClickToMainButton()
     {
         SceneManager.LoadScene("MainScene");
     }
-
     // Update is called once per frame
 
 }
