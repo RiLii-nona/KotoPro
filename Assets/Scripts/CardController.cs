@@ -1,0 +1,19 @@
+ using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class CardController : MonoBehaviour
+{
+    CardView view;
+    public CardModel model;
+    //public CardMovement movement;
+    
+
+    private void Awake(){
+        view = GetComponent<CardView>();
+    }
+    public void Init(int cardID){
+        model = new CardModel(cardID);
+        view.Show(model);
+    }
+}
