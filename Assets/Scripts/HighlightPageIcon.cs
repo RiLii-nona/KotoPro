@@ -6,7 +6,9 @@ using UnityEngine;
 public class HighlightPageIcon : MonoBehaviour
 {
     public GameObject[] IconPosition;
+    public GameObject firstHighlightIcon;
     public GameObject highlightIcon, normalIcon;
+    public bool dragFirst = true;
 
     //int absPageIndex;
     /*

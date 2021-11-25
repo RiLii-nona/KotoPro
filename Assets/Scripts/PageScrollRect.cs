@@ -18,6 +18,9 @@ public class PageScrollRect : ScrollRect
 
     int absPageIndex;
     GameObject InstantiateObj;
+    Vector3 fieldPos;
+
+
 
     //public int pageIndex;
 
@@ -29,6 +32,8 @@ public class PageScrollRect : ScrollRect
         GridLayoutGroup grid = content.GetComponent<GridLayoutGroup>();
         // 1ページの幅を取得.
         pageWidth = grid.cellSize.x + grid.spacing.x;
+
+
     }
 
     // ドラッグを開始したとき.
@@ -74,11 +79,15 @@ public class PageScrollRect : ScrollRect
         //int pageIndex = pageScrollRect.pageIndex;
         Debug.Log(pageIndex);
 
-        Vector3 fieldPos;
+
         //DrawNormalIcon();
         absPageIndex = Math.Abs(pageIndex);
-
-        if (pageIndex <= 0)
+        if (highlightPageIcon.dragFirst == true)
+        {
+            Destroy(highlightPageIcon.firstHighlightIcon);
+            highlightPageIcon.dragFirst = false;
+        }
+        if (pageIndex >= 0)
         {
             fieldPos = highlightPageIcon.IconPosition[0].transform.position;
         }
@@ -86,8 +95,10 @@ public class PageScrollRect : ScrollRect
         {
             fieldPos = highlightPageIcon.IconPosition[absPageIndex].transform.position;
         }
+        Destroy(InstantiateObj);
         InstantiateObj = Instantiate(highlightPageIcon.highlightIcon, fieldPos, Quaternion.identity);
-        InstantiateObj.renderer.sortingOrder = 2;
+        InstantiateObj.GetComponent<SpriteRenderer>().sortingLayerName = "Icon Layer";
+
     }
     void DrawNormalIcon()
     {

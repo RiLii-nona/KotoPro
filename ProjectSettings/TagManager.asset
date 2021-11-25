@@ -44,3 +44,6 @@ TagManager:
   - name: Front Layer
     uniqueID: 3945607357
     locked: 0
+  - name: Icon Layer
+    uniqueID: 3848997777
+    locked: 0
