@@ -37,7 +37,7 @@ public class CardList : MonoBehaviour
     string fieldNumber;
 
     public int deckNumber = 0;
-    CardController[] playerCardList;
+    public CardController[] playerCardList;
 
     void Start()
     {
@@ -115,61 +115,83 @@ public class CardList : MonoBehaviour
         playerNum = playerNumber;
         bool checkContainsLetter = false; //入力文字列にカードの文字が含まれているかを判定
         Debug.Log("CheckLetter" + playerNum);
+
         switch (playerNumber)
         {
             case 1:
                 Debug.Log("player1 check!");
                 playerCardList = KeepCardPlayer1Transform.GetComponentsInChildren<CardController>();
-                answerTextStr = textInputPlayer1.inputField.text;
-                Debug.Log("Player1の入力内容answertext" + answerTextStr.ToString());
-                Debug.Log("textInputPlayer1のtype：" + textInputPlayer1.text.GetType());
+                Debug.Log("playerCardList.Length" + playerCardList.Length);
                 Debug.Log("Player1の入力内容" + textInputPlayer1.text.ToString());
                 break;
             case 2:
                 Debug.Log("player2 check!");
                 playerCardList = KeepCardPlayer2Transform.GetComponentsInChildren<CardController>();
-                answerTextStr = textInputPlayer2.inputField.text;
-                Debug.Log("Player2の入力内容" + answerTextStr);
-                Debug.Log("textInputPlayer2のtype：" + textInputPlayer2.text.GetType());
                 Debug.Log(textInputPlayer2.text.ToString());
                 break;
             default:
                 playerCardList = null;
                 break;
         }
-        //CardController[] playerCardList = KeepCardPlayer1Transform.GetComponentsInChildren<CardController>();
-        //CardController[] player2CardList = KeepCardPlayer2Transform.GetComponentsInChildren<CardController>();
-        Debug.Log("playerCardListの長さ：" + playerCardList.Length);
-        //Debug.Log(playerCardList[1].model.letter);
-        string[] player1LetterList = new string[playerCardList.Length];
-        Debug.Log("ここまでできてる");
-        //Debug.Log(answerText.GetType());
-        // Debug.Log("textInputのtype：" + textInput.text.GetType());
-        //Debug.Log(textInput.text.ToString());
-
-        //answerText = ttext;
-        //answerText = textInput.inputField.text;
-        //Debug.Log(answerText);
-        for (int i = 0; i < playerCardList.Length; i++) //Playerのキープ札の文字を配列に格納
+        if (playerCardList.Length >= 3)
         {
-            Debug.Log(playerCardList[i].model.letter);
-            player1LetterList[i] = playerCardList[i].model.letter;
-            Debug.Log(string.Join(",", player1LetterList));
-            if (!answerTextStr.Contains(player1LetterList[i])) //ここここここここ！！！
+            switch (playerNumber)
             {
-                checkContainsLetter = CheckSpecialLetter(player1LetterList[i], answerTextStr);
+                case 1:
+                    answerText.text = textInputPlayer1.inputField.text;
+                    answerTextStr = textInputPlayer1.inputField.text;
+                    Debug.Log("Player1の入力内容answertext" + answerTextStr.ToString());
+
+                    break;
+                case 2:
+                    textInputPlayer2.inputField.text = answerText.text;
+                    answerTextStr = textInputPlayer2.inputField.text;
+                    Debug.Log("Player2の入力内容" + answerTextStr);
+
+                    break;
+                default:
+                    playerCardList = null;
+                    break;
+            }
+            //CardController[] playerCardList = KeepCardPlayer1Transform.GetComponentsInChildren<CardController>();
+            //CardController[] player2CardList = KeepCardPlayer2Transform.GetComponentsInChildren<CardController>();
+            Debug.Log("playerCardListの長さ：" + playerCardList.Length);
+            //Debug.Log(playerCardList[1].model.letter);
+            string[] playerLetterList = new string[playerCardList.Length];
+            Debug.Log("ここまでできてる");
+            //Debug.Log(answerText.GetType());
+            // Debug.Log("textInputのtype：" + textInput.text.GetType());
+            //Debug.Log(textInput.text.ToString());
+
+            //answerText = ttext;
+            //answerText = textInput.inputField.text;
+            //Debug.Log(answerText);
+            for (int i = 0; i < playerCardList.Length; i++) //Playerのキープ札の文字を配列に格納
+            {
+                Debug.Log(playerCardList[i].model.letter);
+                playerLetterList[i] = playerCardList[i].model.letter;
+                Debug.Log(string.Join(",", playerLetterList));
+                if (!answerTextStr.Contains(playerLetterList[i])) //ここここここここ！！！
+                {
+                    checkContainsLetter = CheckSpecialLetter(playerLetterList[i], answerTextStr);
+                }
+                else
+                {
+                    checkContainsLetter = true;
+                }
+                Debug.Log("入力があっているか" + checkContainsLetter);
+            }
+            if (checkContainsLetter == true)
+            {
+                JudgeByOpponent(playerNumber);
+                checkContainsLetter = false;
             }
             else
             {
-                checkContainsLetter = true;
+                answerText.text = "";
             }
-            Debug.Log("入力があっているか" + checkContainsLetter);
         }
-        if (checkContainsLetter == true)
-        {
-            JudgeByOpponent(playerNumber);
-            checkContainsLetter = false;
-        }
+
         //answerTextStr = null;
     }
 
@@ -193,7 +215,7 @@ public class CardList : MonoBehaviour
         {
             Scoreing();
         }
-        Debug.Log(deckNumber);
+        //Debug.Log(deckNumber);
 
         /*
         for (int i = 0; i < 4; i++) // 3回繰り返す
