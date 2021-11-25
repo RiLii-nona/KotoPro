@@ -10,6 +10,8 @@ public class PageScrollRect : ScrollRect
     // 前回のページIndex. 最も左を0とする.
     private int prevPageIndex = 0;
 
+    public int pageIndex;
+
     protected override void Awake()
     {
         base.Awake();
@@ -36,7 +38,7 @@ public class PageScrollRect : ScrollRect
 
         // スナップさせるページを決定する.
         // スナップさせるページのインデックスを決定する.
-        int pageIndex = Mathf.RoundToInt(content.anchoredPosition.x / pageWidth);
+        pageIndex = Mathf.RoundToInt(content.anchoredPosition.x / pageWidth);
         // ページが変わっていない且つ、素早くドラッグした場合.
         // ドラッグ量の具合は適宜調整してください.
         if (pageIndex == prevPageIndex && Mathf.Abs(eventData.delta.x) >= 5)
@@ -51,5 +53,6 @@ public class PageScrollRect : ScrollRect
 
         // 「ページが変わっていない」の判定を行うため、前回スナップされていたページを記憶しておく.
         prevPageIndex = pageIndex;
+        Debug.Log(pageIndex);
     }
 }
