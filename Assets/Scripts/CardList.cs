@@ -36,7 +36,7 @@ public class CardList : MonoBehaviour
     JudgeButtunAction judgeButtunAction;
     string fieldNumber;
 
-    int deckNumber = 0;
+    public int deckNumber = 0;
     CardController[] playerCardList;
 
     void Start()
@@ -193,6 +193,7 @@ public class CardList : MonoBehaviour
         {
             Scoreing();
         }
+        Debug.Log(deckNumber);
 
         /*
         for (int i = 0; i < 4; i++) // 3回繰り返す
@@ -256,7 +257,7 @@ public class CardList : MonoBehaviour
         }
 
     }
-    void Scoreing()
+    public void Scoreing()
     { //deckがすべてなくなったとき＜＜＜ここでシーン遷移する！
         this.GetComponent<ToResultScene>().SetScore();
         SceneManager.LoadScene("ResultScene");
