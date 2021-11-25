@@ -76,7 +76,7 @@ public class PageScrollRect : ScrollRect
     public void ChangeIcon(int pageIndex)
     {
         HighlightPageIcon highlightPageIcon = gameObject.GetComponent<HighlightPageIcon>();
-        //int pageIndex = pageScrollRect.pageIndex;
+
         Debug.Log(pageIndex);
 
 

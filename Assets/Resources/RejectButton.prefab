@@ -68,8 +68,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 4000d286926f44654a42f73d7128be38, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -146,9 +146,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb2cd1efacd7849842339bd693157d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNumber: 0
   acceptButtonPrefab: {fileID: 4164705721201590118, guid: 12f4101f74c3fbb47b190a16e6cbeb39, type: 3}
   rejectButtonPrefab: {fileID: 924738313046439233}
+  GameManager: {fileID: 0}
+  cardPrefab: {fileID: 0}
+  i: 0
 --- !u!1 &8972945176185257810
 GameObject:
   m_ObjectHideFlags: 0
