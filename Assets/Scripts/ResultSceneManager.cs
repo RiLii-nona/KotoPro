@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,8 +11,10 @@ public class ResultSceneManager : MonoBehaviour
     [SerializeField] GameObject[] starPrefab, circlePrefab, hexagonPrefab, blossomPrefab;
     //[SerializeField] GameObject hexagon1Prefab;
     [SerializeField] RectTransform canvas;
+    [SerializeField] Text player1ScoreText, player2ScoreText, player1Win, player2Win;
     int shapeSplit;
     int player1FocusArea = 0, player2FocusArea = 0;
+    int player1Score = 0, player2Score = 0;
     private GameObject imageSetObj;
     private Sprite shapeImage;
     GameObject instantiateObj;
@@ -62,6 +65,9 @@ public class ResultSceneManager : MonoBehaviour
         Debug.Log("player1ScoreShape" + string.Join(",", playerScoreShape));
         Debug.Log("player2ScoreShape" + string.Join(",", playerScoreNotShape));
 
+        player1Score = player1ScoreShape[0] + player1ScoreShape[1] + player1ScoreShape[2] + player1ScoreShape[3];
+        player2Score = player2ScoreShape[0] + player2ScoreShape[1] + player2ScoreShape[2] + player2ScoreShape[3];
+
 
     }
 
@@ -79,6 +85,22 @@ public class ResultSceneManager : MonoBehaviour
 
             player2FocusArea = DisplayShape(player2ShapePlace, player2ScoreShape[i], player2FocusArea, true, i);
             player2FocusArea = DisplayShape(player2ShapePlace, player2ScoreNotShape[i], player2FocusArea, false, i);
+
+            player1ScoreText.text = player1Score.ToString() + "点";
+            player2ScoreText.text = player2Score.ToString() + "点";
+            if (player1Score > player2Score)
+            {
+                player1Win.text = "勝利";
+            }
+            else if (player1Score < player2Score)
+            {
+                player2Win.text = "勝利";
+            }
+            else
+            {
+                player1Win.text = "引き分け";
+                player2Win.text = "引き分け";
+            }
 
         }
     }
@@ -160,6 +182,8 @@ public class ResultSceneManager : MonoBehaviour
         else { return null; }
 
     }
+
+
 
 
 }

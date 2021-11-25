@@ -6,6 +6,7 @@ public class SwapAllCard : MonoBehaviour
 {
     [SerializeField] Transform[] cardFieldTransform;
     [SerializeField] GameObject tardetgameObject;
+    CardModel cardModel;
     int cardCount;
     bool existCard = true;
     public void OnClick()
@@ -21,6 +22,7 @@ public class SwapAllCard : MonoBehaviour
             foreach (Transform fieldCardChild in cardFieldTransform[i])
             {
                 Destroy(fieldCardChild.gameObject);
+                //fieldCardChild.gameObject
             }
             if (existCard)
             {
