@@ -43,6 +43,7 @@ public class CardModel
         Debug.Log("Letterの配列長" + cardDetail.letterArray.Length);
         Debug.Log("Typeの配列長" + cardDetail.typeArray.Length);
         letter = cardDetail.letterArray[cardID];
+
         type = cardDetail.typeArray[cardID];
         if (type == 1)
         {

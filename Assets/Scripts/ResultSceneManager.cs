@@ -119,7 +119,7 @@ public class ResultSceneManager : MonoBehaviour
                 instantiateObj = targetShape[targetShape.Length - 1];
                 Debug.Log(instantiateObj);
                 Instantiate(instantiateObj, fieldPos, Quaternion.identity);
-
+                playerScoreShape--;
             }
             else
             {
@@ -132,6 +132,7 @@ public class ResultSceneManager : MonoBehaviour
                 GameObject[] targetShape = shapeTypeToGameObject(shapeType);
                 instantiateObj = targetShape[playerScoreShape - 1];
                 Instantiate(instantiateObj, fieldPos, Quaternion.identity);
+                playerScoreShape = 0;
                 /*
                 if (shapeType == 2)
                                 {
@@ -154,7 +155,7 @@ public class ResultSceneManager : MonoBehaviour
             }
             //imageSetObj.GetComponent<Image>().color = new Color(1, 1, 1, 1);
             //playerShapePlace[playerFocusArea].AddComponent<Image>().sprite = Resources.Load<Sprite>("starPiece");
-            playerScoreShape--;
+
             playerFocusArea++;
             //Debug.Log(playerFocusArea);
 

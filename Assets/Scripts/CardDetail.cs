@@ -8,7 +8,7 @@ public class CardDetail : MonoBehaviour
     public int[] typeArray = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4 };
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         CardShuffle();
     }
