@@ -7,8 +7,9 @@ public class CardMovement : MonoBehaviour, IDragHandler, IBeginDragHandler, IEnd
 {
     RectTransform canvas;
     public Transform defaultParent;
-    //public Transform[] pastParent = new Transform[8];
 
+    //public Transform[] pastParent = new Transform[8];
+    Transform keepCardPlayer1, keepCardPlayer2;
     Camera cam;
     int i = 0;
 
@@ -16,6 +17,8 @@ public class CardMovement : MonoBehaviour, IDragHandler, IBeginDragHandler, IEnd
     {
         canvas = GameObject.Find("Canvas").GetComponent<RectTransform>();
         cam = Camera.main;
+        keepCardPlayer1 = GameObject.Find("KeepCardPlayer1").GetComponent<Transform>();
+        keepCardPlayer2 = GameObject.Find("KeepCardPlayer2").GetComponent<Transform>();
 
     }
     public void OnBeginDrag(PointerEventData eventData)
@@ -43,7 +46,20 @@ public class CardMovement : MonoBehaviour, IDragHandler, IBeginDragHandler, IEnd
     public void OnEndDrag(PointerEventData eventData)
     {
         transform.SetParent(defaultParent, false);
-        GetComponent<CanvasGroup>().blocksRaycasts = true;
+        Debug.Log(defaultParent);
+        if (defaultParent == keepCardPlayer1 || defaultParent == keepCardPlayer2)
+        {
+            Debug.Log("キープカードにカードが移動しました。");
+            Debug.Log(GetComponent<CanvasGroup>().blocksRaycasts);
+        }
+        else
+        {
+            GetComponent<CanvasGroup>().blocksRaycasts = true;
+            Debug.Log(GetComponent<CanvasGroup>().blocksRaycasts);
+            Debug.Log("カードが元に戻りました。");
+
+        }
+
 
     }
 

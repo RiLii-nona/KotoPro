@@ -59,6 +59,7 @@ public class PageScrollRect : ScrollRect
         if (pageIndex == prevPageIndex && Mathf.Abs(eventData.delta.x) >= 5)
         {
             pageIndex += (int)Mathf.Sign(eventData.delta.x);
+            Debug.Log("aaa");
         }
 
         // Contentをスクロール位置を決定する.

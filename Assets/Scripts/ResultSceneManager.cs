@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 public class ResultSceneManager : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -14,6 +15,7 @@ public class ResultSceneManager : MonoBehaviour
     [SerializeField] Text player1ScoreText, player2ScoreText, player1Win, player2Win;
     int shapeSplit;
     int player1FocusArea = 0, player2FocusArea = 0;
+    int playerFocusAreaCoroutine;
     int player1Score = 0, player2Score = 0;
     private GameObject imageSetObj;
     private Sprite shapeImage;
@@ -80,11 +82,11 @@ public class ResultSceneManager : MonoBehaviour
             Debug.Log("player1ScoreNotShape" + player1ScoreNotShape[i]);
             Debug.Log("player1FocusArea" + player1FocusArea);
 
-            player1FocusArea = DisplayShape(player1ShapePlace, player1ScoreShape[i], player1FocusArea, true, i);   //点数になるoo
-            player1FocusArea = DisplayShape(player1ShapePlace, player1ScoreNotShape[i], player1FocusArea, false, i);    //点数にならないoo
+            player1FocusArea = DisplayAllShape(player1ShapePlace, player1ScoreShape[i], player1FocusArea, true, i);   //点数になるoo
+            player1FocusArea = DisplayAllShape(player1ShapePlace, player1ScoreNotShape[i], player1FocusArea, false, i);    //点数にならないoo
 
-            player2FocusArea = DisplayShape(player2ShapePlace, player2ScoreShape[i], player2FocusArea, true, i);
-            player2FocusArea = DisplayShape(player2ShapePlace, player2ScoreNotShape[i], player2FocusArea, false, i);
+            player2FocusArea = DisplayAllShape(player2ShapePlace, player2ScoreShape[i], player2FocusArea, true, i);
+            player2FocusArea = DisplayAllShape(player2ShapePlace, player2ScoreNotShape[i], player2FocusArea, false, i);
 
             player1ScoreText.text = player1Score.ToString() + "点";
             player2ScoreText.text = player2Score.ToString() + "点";
@@ -105,8 +107,11 @@ public class ResultSceneManager : MonoBehaviour
         }
     }
 
-    int DisplayShape(GameObject[] playerShapePlace, int playerScoreShape, int playerFocusArea, bool completeShape, int shapeType)
+    int DisplayAllShape(GameObject[] playerShapePlace, int playerScoreShape, int playerFocusArea, bool completeShape, int shapeType)
     {
+        //GameObject[] instantiateObjList = new ;
+        List<GameObject> instantiateObjList = new List<GameObject>();
+
         while (playerScoreShape > 0)
         {
             imageSetObj = playerShapePlace[playerFocusArea];
@@ -118,7 +123,9 @@ public class ResultSceneManager : MonoBehaviour
                 GameObject[] targetShape = shapeTypeToGameObject(shapeType);
                 instantiateObj = targetShape[targetShape.Length - 1];
                 Debug.Log(instantiateObj);
-                Instantiate(instantiateObj, fieldPos, Quaternion.identity);
+                //instantiateObjList[playerFocusArea] = instantiateObj;
+                instantiateObjList.Add(instantiateObj);
+                //Instantiate(instantiateObj, fieldPos, Quaternion.identity);
                 playerScoreShape--;
             }
             else
@@ -131,38 +138,26 @@ public class ResultSceneManager : MonoBehaviour
                 //imageSetObj.GetComponent<Image>().sprite = Resources.Load<Sprite>(shapeTypeToString(shapeType) + playerScoreShape.ToString());
                 GameObject[] targetShape = shapeTypeToGameObject(shapeType);
                 instantiateObj = targetShape[playerScoreShape - 1];
-                Instantiate(instantiateObj, fieldPos, Quaternion.identity);
+                //instantiateObjList[playerFocusArea] = instantiateObj;
+                instantiateObjList.Add(instantiateObj);
+
+                //Instantiate(instantiateObj, fieldPos, Quaternion.identity);
                 playerScoreShape = 0;
-                /*
-                if (shapeType == 2)
-                                {
-                                    Debug.Log("六角形！！");
-                                    //playerShapePlace[playerFocusArea] = hexagonPrefab[playerScoreShape - 1];
-
-                                    instantiateObj = hexagonPrefab[playerScoreShape - 1];
-                                    Debug.Log(hexagonPrefab[0]);
-
-                                    Instantiate(instantiateObj, fieldPos, Quaternion.identity);
-
-                                }
-
-                */
-
-
-
-                //imageSetObj = (GameObject)shapeTypeToString(shapeType) + playerScoreShape.ToString();
 
             }
-            //imageSetObj.GetComponent<Image>().color = new Color(1, 1, 1, 1);
-            //playerShapePlace[playerFocusArea].AddComponent<Image>().sprite = Resources.Load<Sprite>("starPiece");
-
+            //StartCoroutine(DisplayAnimation(instantiateObj, fieldPos));
+            Instantiate(instantiateObj, fieldPos, Quaternion.identity);
+            //Debug.Log(fieldPos);
+            //float posX = fieldPos.x;
+            //float posY = fieldPos.y;
+            //instantiateObj.GetComponent<Transform>().DOMove(new Vector2(posX, posY), 0.3f);
             playerFocusArea++;
-            //Debug.Log(playerFocusArea);
-
-
         }
+        //StartCoroutine(DisplayAnimation(playerShapePlace, instantiateObjList, new Vector3(3.0f, 3.0f, 3.0f)));
+
         return playerFocusArea;
     }
+
 
     string shapeTypeToString(int shapeType)
     {
@@ -181,6 +176,24 @@ public class ResultSceneManager : MonoBehaviour
         else if (shapeType == 2) { return hexagonPrefab; }
         else if (shapeType == 3) { return blossomPrefab; }
         else { return null; }
+
+    }
+
+    IEnumerator DisplayAnimation(GameObject[] playerShapePlace, List<GameObject> instantiateObjList, Vector3 fieldPos)
+    {
+        for (int i = 0; i < instantiateObjList.Count; i++)
+        {
+            Instantiate(instantiateObjList[i], playerShapePlace[i].transform.position, Quaternion.identity);
+            //instantiateObj.GetComponent<Transform>().DOMove(new Vector2(fieldPos.x, fieldPos.y), 0.3f);
+            instantiateObj.GetComponent<Transform>().position = fieldPos;
+
+            yield return new WaitForSeconds(0.4f);
+        }
+
+        Debug.Log(fieldPos);
+
+
+
 
     }
 

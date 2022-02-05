@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
+
 
 public class JudgeButtunAction : MonoBehaviour
 {
@@ -21,10 +23,15 @@ public class JudgeButtunAction : MonoBehaviour
     //public GameObject targetObj;
 
 
+    void Start()
+    {
+        GameManager = GameObject.Find("GameManager");
+        cardList = GameManager.GetComponent<CardList>();
+    }
     int playerNumByCardList;
     public void OnClick(int number)
     {
-
+        cardList.blockRaycast.GetComponent<Image>().raycastTarget = false;
         //Debug.Log(KeepCardPlayer1Transform);
 
         //keepcardの子要素全て受け取ってtypeを確認
@@ -34,10 +41,12 @@ public class JudgeButtunAction : MonoBehaviour
             return;
         }
         */
+        //this.transform.DOScale(1.1f, 0.5f).SetEase(Ease.OutElastic);
         playerNumByCardList = CardList.playerNum;
         switch (number)
         {
             case 0:
+
                 Debug.Log("Accept");
                 //獲得カードの表記変える
                 //forで子要素type見て加点していく
@@ -50,7 +59,9 @@ public class JudgeButtunAction : MonoBehaviour
                     }
                 */
                 ScoreAddition();
-                DestroyKeepCards();
+                Destroy(cardList.RejectObjk);
+                StartCoroutine(DestroyAfterAnimation(cardList.AcceptObjk));
+                //DestroyJudgeButton();
                 selectJudge = true;
                 //targetObj.GetComponent<CardList>().DealCard(cardFieldTransform1);
                 //playerCardList = KeepCardPlayer2Transform.GetComponentsInChildren<CardController>();
@@ -60,7 +71,8 @@ public class JudgeButtunAction : MonoBehaviour
             case 1:
 
                 Debug.Log("Reject");
-                DestroyKeepCards();
+                Destroy(cardList.AcceptObjk);
+                StartCoroutine(DestroyAfterAnimation(cardList.RejectObjk));
                 selectJudge = true;
                 break;
             default:
@@ -151,7 +163,7 @@ public class JudgeButtunAction : MonoBehaviour
 
     }
 
-    void DestroyKeepCards()
+    void DestroyJudgeButton()
     {
         GameManager = GameObject.Find("GameManager");
         cardList = GameManager.GetComponent<CardList>();
@@ -159,6 +171,8 @@ public class JudgeButtunAction : MonoBehaviour
         Destroy(cardList.RejectObjk);
 
     }
+
+
     /*
     public void GetPastParent(Transform defaultParent)
     {
@@ -167,4 +181,11 @@ public class JudgeButtunAction : MonoBehaviour
         i++;
     }
     */
+    IEnumerator DestroyAfterAnimation(GameObject destroyObjk)
+    {
+        this.transform.DOScale(2.1f, 2.0f).SetEase(Ease.OutElastic);
+        yield return new WaitForSeconds(0.3f);
+        Destroy(destroyObjk);
+    }
 }
+

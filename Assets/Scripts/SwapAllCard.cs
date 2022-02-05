@@ -2,21 +2,40 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using DG.Tweening;
+
 
 public class SwapAllCard : MonoBehaviour
 {
     [SerializeField] Transform[] cardFieldTransform;
     [SerializeField] GameObject tardetgameObject;
+    [SerializeField] AnimationCurve animationCurve;
     CardList cardList;
     CardModel cardModel;
     int cardCount;
     bool existCard = true;
     bool reachLastCard = false;
-    void Start()
+
+    public void OnClick()
     {
+        StartCoroutine("SwapAfterAnimation");
 
     }
-    public void OnClick()
+
+    IEnumerator SwapAfterAnimation()
+    {
+        //this.transform.DOScale(1.0f, 1.0f).SetEase(Ease.OutElastic);
+        DOTween.To(
+  () => 0, //値(time)の初期値
+  (time) => this.transform.localScale = Vector3.one * animationCurve.Evaluate(time),//値を使った処理
+  1.0f, //値(time)の最終値
+  0.5f //Tweenの時間
+);
+        yield return new WaitForSeconds(0.3f);
+        SwapCards();
+    }
+
+    void SwapCards()
     {
         cardList = tardetgameObject.GetComponent<CardList>();
         Debug.Log("SwapAllCard!!!");
@@ -50,6 +69,5 @@ public class SwapAllCard : MonoBehaviour
             }
             existCard = true;
         }
-
     }
 }

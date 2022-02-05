@@ -5,14 +5,18 @@ using UnityEngine.UI;
 
 public class InputTextRaycast : MonoBehaviour
 {
-    public void InputTextRaycastOff(InputField inputField)
+    [SerializeField] GameObject textBlockRaycast;
+    public void InputTextRaycastOff(GameObject textBlockRaycast)
     {
-        inputField.GetComponent<Image>().raycastTarget = false;
+        //inputField.GetComponent<Image>().raycastTarget = false;
+        textBlockRaycast.GetComponent<Image>().raycastTarget = false;
     }
 
-    public void InputTextRaycastOn(InputField inputField)
+    public void InputTextRaycastOn(GameObject textBlockRaycast)
     {
-        inputField.GetComponent<Image>().raycastTarget = true;
+        //inputField.GetComponent<Image>().raycastTarget = true;
+        textBlockRaycast.GetComponent<Image>().raycastTarget = true;
+
     }
 
 }

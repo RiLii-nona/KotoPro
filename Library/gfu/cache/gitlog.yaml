@@ -1,0 +1,2586 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -530159753, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 3
+  lastUpdatedAtString: 2022-02-05T20:23:25.247+09:00
+  initializedAtString: 2022-02-05T20:23:25.247+09:00
+  log:
+  - commitID: 6a74044b9f20ffd5647a7ba1761330e0c80b569a
+    mergeA: 
+    mergeB: 
+    authorName: Rina Harai
+    authorEmail: ryoka0902.kg@gmail.com
+    commitEmail: ryoka0902.kg@gmail.com
+    commitName: Rina Harai
+    summary: fix bug Result score(NotShape)
+    description: "\u70B9\u6570\u306B\u306A\u3089\u306A\u3044\u5F62\u306EShape\u8868\u793A\u306E\u30D0\u30B0\u3092\u4FEE\u6B63\u3002\nCardDetail\u306E\u5834\u30AB\u30FC\u30C9\u306E\u30B7\u30E3\u30C3\u30D5\u30EB\u3092Awake\u3067\u5B9F\u884C\u306B\u5909\u66F4\u3002"
+    timeString: 2021-11-26T09:42:16.000+09:00
+    commitTimeString: 2021-11-26T09:42:16.000+09:00
+    changes:
+    - path: Assets/Resources/Fonts.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Fonts.meta
+      projectPath: Assets/Resources/Fonts.meta
+      originalPath: Assets/Fonts.meta
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Assets/Resources/Fonts/HannariMincho.otf
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Fonts/HannariMincho.otf
+      projectPath: Assets/Resources/Fonts/HannariMincho.otf
+      originalPath: Assets/Fonts/HannariMincho-Regular.otf
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Assets/Resources/Fonts/HannariMincho.otf.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Fonts/HannariMincho.otf.meta
+      projectPath: Assets/Resources/Fonts/HannariMincho.otf.meta
+      originalPath: Assets/Fonts/HannariMincho-Regular.otf.meta
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/MainBackGround.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/MainBackGround.PNG
+      projectPath: Assets/Resources/Image/MainBackGround.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/MainBackGround.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/MainBackGround.PNG.meta
+      projectPath: Assets/Resources/Image/MainBackGround.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scenes/MainScene.unity
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scenes/MainScene.unity
+      projectPath: Assets/Scenes/MainScene.unity
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets/Scenes/MenuScene.unity
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scenes/MenuScene.unity
+      projectPath: Assets/Scenes/MenuScene.unity
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets/Scripts/CardDetail.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/CardDetail.cs
+      projectPath: Assets/Scripts/CardDetail.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets/Scripts/CardModel.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/CardModel.cs
+      projectPath: Assets/Scripts/CardModel.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets/Scripts/CardView.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/CardView.cs
+      projectPath: Assets/Scripts/CardView.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets/Scripts/ResultSceneManager.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/ResultSceneManager.cs
+      projectPath: Assets/Scripts/ResultSceneManager.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 67b5f8748bdc3c2658256ea25799226999c5b042
+    mergeA: 
+    mergeB: 
+    authorName: Rina Harai
+    authorEmail: ryoka0902.kg@gmail.com
+    commitEmail: ryoka0902.kg@gmail.com
+    commitName: Rina Harai
+    summary: change accept min card quantity
+    description: "\u4F7F\u7528\u30AB\u30FC\u30C9\u306E\u6700\u4F4E\u679A\u6570\u3092\uFF13\u679A\u306B\u5909\u66F4\u3002"
+    timeString: 2021-11-26T08:43:30.000+09:00
+    commitTimeString: 2021-11-26T08:43:30.000+09:00
+    changes:
+    - path: Assets/Resources/Image/ScoreShapeList.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/ScoreShapeList.PNG
+      projectPath: Assets/Resources/Image/ScoreShapeList.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/ScoreShapeList.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/ScoreShapeList.PNG.meta
+      projectPath: Assets/Resources/Image/ScoreShapeList.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scenes/MainScene.unity
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scenes/MainScene.unity
+      projectPath: Assets/Scenes/MainScene.unity
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets/Scripts/CardList.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/CardList.cs
+      projectPath: Assets/Scripts/CardList.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets/Scripts/TextInput.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/TextInput.cs
+      projectPath: Assets/Scripts/TextInput.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 17f86d129c4e9bdfddf79e373a840c910418067d
+    mergeA: 
+    mergeB: 
+    authorName: Rina Harai
+    authorEmail: ryoka0902.kg@gmail.com
+    commitEmail: ryoka0902.kg@gmail.com
+    commitName: Rina Harai
+    summary: swapAllcard bug fix
+    description: "deckCard\u679A\u6570\u4EE5\u4E0A\u306E\u30AB\u30FC\u30C9\u3092\u751F\u6210\u3057\u3088\u3046\u3068\u3059\u308B\u30D0\u30B0\u3092\u4FEE\u6B63"
+    timeString: 2021-11-26T07:36:23.000+09:00
+    commitTimeString: 2021-11-26T07:36:23.000+09:00
+    changes:
+    - path: Assets/Scripts/CardList.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/CardList.cs
+      projectPath: Assets/Scripts/CardList.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets/Scripts/SwapAllCard.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/SwapAllCard.cs
+      projectPath: Assets/Scripts/SwapAllCard.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 8c388ad3c3e0cf4f3ffb45b46fa52e23bebcc3c4
+    mergeA: 
+    mergeB: 
+    authorName: Rina Harai
+    authorEmail: ryoka0902.kg@gmail.com
+    commitEmail: ryoka0902.kg@gmail.com
+    commitName: Rina Harai
+    summary: shuffleCard bug fix
+    description: 
+    timeString: 2021-11-26T07:08:52.000+09:00
+    commitTimeString: 2021-11-26T07:08:52.000+09:00
+    changes:
+    - path: Assets/Fonts.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Fonts.meta
+      projectPath: Assets/Fonts.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Fonts/HannariMincho-Regular.otf
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Fonts/HannariMincho-Regular.otf
+      projectPath: Assets/Fonts/HannariMincho-Regular.otf
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Fonts/HannariMincho-Regular.otf.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Fonts/HannariMincho-Regular.otf.meta
+      projectPath: Assets/Fonts/HannariMincho-Regular.otf.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scenes/MainScene.unity
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scenes/MainScene.unity
+      projectPath: Assets/Scenes/MainScene.unity
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets/Scenes/ResultScene.unity
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scenes/ResultScene.unity
+      projectPath: Assets/Scenes/ResultScene.unity
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets/Scripts/CardDetail.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/CardDetail.cs
+      projectPath: Assets/Scripts/CardDetail.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/CardDetail.cs.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/CardDetail.cs.meta
+      projectPath: Assets/Scripts/CardDetail.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/CardModel.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/CardModel.cs
+      projectPath: Assets/Scripts/CardModel.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets/Scripts/ResultSceneManager.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/ResultSceneManager.cs
+      projectPath: Assets/Scripts/ResultSceneManager.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets/Scripts/SwapAllCard.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/SwapAllCard.cs
+      projectPath: Assets/Scripts/SwapAllCard.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: UserSettings/EditorUserSettings.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/UserSettings/EditorUserSettings.asset
+      projectPath: UserSettings/EditorUserSettings.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 199a80bef1cc3909f0c46f4d8ab27139805d7899
+    mergeA: 
+    mergeB: 
+    authorName: Rina Harai
+    authorEmail: ryoka0902.kg@gmail.com
+    commitEmail: ryoka0902.kg@gmail.com
+    commitName: Rina Harai
+    summary: faild slideerExplanation, add accept&reject Image
+    description: 
+    timeString: 2021-11-26T06:14:46.000+09:00
+    commitTimeString: 2021-11-26T06:14:46.000+09:00
+    changes:
+    - path: Assets/Resources/AcceptButton.prefab
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/AcceptButton.prefab
+      projectPath: Assets/Resources/AcceptButton.prefab
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/ExplanationPanel0.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/ExplanationPanel0.PNG
+      projectPath: Assets/Resources/Image/ExplanationPanel0.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/ExplanationPanel0.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/ExplanationPanel0.PNG.meta
+      projectPath: Assets/Resources/Image/ExplanationPanel0.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/ExplanationPanel1.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/ExplanationPanel1.PNG
+      projectPath: Assets/Resources/Image/ExplanationPanel1.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/ExplanationPanel1.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/ExplanationPanel1.PNG.meta
+      projectPath: Assets/Resources/Image/ExplanationPanel1.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/ExplanationPanel2.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/ExplanationPanel2.PNG
+      projectPath: Assets/Resources/Image/ExplanationPanel2.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/ExplanationPanel2.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/ExplanationPanel2.PNG.meta
+      projectPath: Assets/Resources/Image/ExplanationPanel2.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/ExplanationPanel3.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/ExplanationPanel3.PNG
+      projectPath: Assets/Resources/Image/ExplanationPanel3.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/ExplanationPanel3.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/ExplanationPanel3.PNG.meta
+      projectPath: Assets/Resources/Image/ExplanationPanel3.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/ExplanationPanel4.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/ExplanationPanel4.PNG
+      projectPath: Assets/Resources/Image/ExplanationPanel4.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/ExplanationPanel4.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/ExplanationPanel4.PNG.meta
+      projectPath: Assets/Resources/Image/ExplanationPanel4.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/ExplanationPanel5.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/ExplanationPanel5.PNG
+      projectPath: Assets/Resources/Image/ExplanationPanel5.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/ExplanationPanel5.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/ExplanationPanel5.PNG.meta
+      projectPath: Assets/Resources/Image/ExplanationPanel5.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/RuleCursorFocussmall.prefab
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/RuleCursorFocussmall.prefab
+      projectPath: Assets/Resources/Image/RuleCursorFocussmall.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/RuleCursorFocussmall.prefab.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/RuleCursorFocussmall.prefab.meta
+      projectPath: Assets/Resources/Image/RuleCursorFocussmall.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/RejectButton.prefab
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/RejectButton.prefab
+      projectPath: Assets/Resources/RejectButton.prefab
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets/Resources/acceptImage.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/acceptImage.PNG
+      projectPath: Assets/Resources/acceptImage.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/acceptImage.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/acceptImage.PNG.meta
+      projectPath: Assets/Resources/acceptImage.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/rejectImage.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/rejectImage.PNG
+      projectPath: Assets/Resources/rejectImage.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/rejectImage.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/rejectImage.PNG.meta
+      projectPath: Assets/Resources/rejectImage.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scenes/ExplanationScene.unity
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scenes/ExplanationScene.unity
+      projectPath: Assets/Scenes/ExplanationScene.unity
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets/Scripts/PageScrollRect.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/PageScrollRect.cs
+      projectPath: Assets/Scripts/PageScrollRect.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 0ef77d313e0cc4103fde7d187424ef51e02d606d
+    mergeA: 
+    mergeB: 
+    authorName: Rina Harai
+    authorEmail: ryoka0902.kg@gmail.com
+    commitEmail: ryoka0902.kg@gmail.com
+    commitName: Rina Harai
+    summary: complete highlight icon
+    description: 
+    timeString: 2021-11-26T02:35:48.000+09:00
+    commitTimeString: 2021-11-26T02:35:48.000+09:00
+    changes:
+    - path: Assets/Scenes/ExplanationScene.unity
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scenes/ExplanationScene.unity
+      projectPath: Assets/Scenes/ExplanationScene.unity
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets/Scripts/HighlightPageIcon.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/HighlightPageIcon.cs
+      projectPath: Assets/Scripts/HighlightPageIcon.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets/Scripts/PageScrollRect.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/PageScrollRect.cs
+      projectPath: Assets/Scripts/PageScrollRect.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: ProjectSettings/TagManager.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/ProjectSettings/TagManager.asset
+      projectPath: ProjectSettings/TagManager.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: UserSettings/EditorUserSettings.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/UserSettings/EditorUserSettings.asset
+      projectPath: UserSettings/EditorUserSettings.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 0e425371ab7c5d42531d1f7c9b91116a9c3009ce
+    mergeA: 
+    mergeB: 
+    authorName: Rina Harai
+    authorEmail: ryoka0902.kg@gmail.com
+    commitEmail: ryoka0902.kg@gmail.com
+    commitName: Rina Harai
+    summary: add Highlight icon /notcolect
+    description: 
+    timeString: 2021-11-26T01:24:32.000+09:00
+    commitTimeString: 2021-11-26T01:24:32.000+09:00
+    changes:
+    - path: Assets/Resources/Image/RuleCursorFocus.prefab
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/RuleCursorFocus.prefab
+      projectPath: Assets/Resources/Image/RuleCursorFocus.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/RuleCursorFocus.prefab.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/RuleCursorFocus.prefab.meta
+      projectPath: Assets/Resources/Image/RuleCursorFocus.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/RuleCursorNotFocus.prefab
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/RuleCursorNotFocus.prefab
+      projectPath: Assets/Resources/Image/RuleCursorNotFocus.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/RuleCursorNotFocus.prefab.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/RuleCursorNotFocus.prefab.meta
+      projectPath: Assets/Resources/Image/RuleCursorNotFocus.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scenes/ExplanationScene.unity
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scenes/ExplanationScene.unity
+      projectPath: Assets/Scenes/ExplanationScene.unity
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets/Scripts/EmphasisPageIcon.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/EmphasisPageIcon.cs
+      projectPath: Assets/Scripts/EmphasisPageIcon.cs
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Assets/Scripts/HighlightPageIcon.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/HighlightPageIcon.cs
+      projectPath: Assets/Scripts/HighlightPageIcon.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/HighlightPageIcon.cs.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/HighlightPageIcon.cs.meta
+      projectPath: Assets/Scripts/HighlightPageIcon.cs.meta
+      originalPath: Assets/Scripts/EmphasisPageIcon.cs.meta
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Assets/Scripts/PageScrollRect.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/PageScrollRect.cs
+      projectPath: Assets/Scripts/PageScrollRect.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: fbb22cad8198e608f546180e597c43a81b26ea67
+    mergeA: 
+    mergeB: 
+    authorName: Rina Harai
+    authorEmail: ryoka0902.kg@gmail.com
+    commitEmail: ryoka0902.kg@gmail.com
+    commitName: Rina Harai
+    summary: adjusted page scroll appearance in Explanation Scene
+    description: 
+    timeString: 2021-11-26T00:09:05.000+09:00
+    commitTimeString: 2021-11-26T00:09:05.000+09:00
+    changes:
+    - path: Assets/Resources/Image/ExplanatiomFrame.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/ExplanatiomFrame.PNG
+      projectPath: Assets/Resources/Image/ExplanatiomFrame.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/ExplanatiomFrame.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/ExplanatiomFrame.PNG.meta
+      projectPath: Assets/Resources/Image/ExplanatiomFrame.PNG.meta
+      originalPath: Assets/Resources/Image/RulePanel.PNG.meta
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/ExplanationPanel.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/ExplanationPanel.PNG
+      projectPath: Assets/Resources/Image/ExplanationPanel.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/ExplanationPanel.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/ExplanationPanel.PNG.meta
+      projectPath: Assets/Resources/Image/ExplanationPanel.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/RulePanel.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/RulePanel.PNG
+      projectPath: Assets/Resources/Image/RulePanel.PNG
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Assets/Scenes/ExplanationScene.unity
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scenes/ExplanationScene.unity
+      projectPath: Assets/Scenes/ExplanationScene.unity
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets/Scripts/EmphasisPageIcon.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/EmphasisPageIcon.cs
+      projectPath: Assets/Scripts/EmphasisPageIcon.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/EmphasisPageIcon.cs.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/EmphasisPageIcon.cs.meta
+      projectPath: Assets/Scripts/EmphasisPageIcon.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/PageScrollRect.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/PageScrollRect.cs
+      projectPath: Assets/Scripts/PageScrollRect.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: ProjectSettings/TagManager.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/ProjectSettings/TagManager.asset
+      projectPath: ProjectSettings/TagManager.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 753ab46a6d54f2dc8167dfb1537ab1cceb7b4dbc
+    mergeA: 
+    mergeB: 
+    authorName: Rina Harai
+    authorEmail: ryoka0902.kg@gmail.com
+    commitEmail: ryoka0902.kg@gmail.com
+    commitName: Rina Harai
+    summary: add menu scene, explanation scene, explanation slider
+    description: 
+    timeString: 2021-11-25T23:10:27.000+09:00
+    commitTimeString: 2021-11-25T23:10:27.000+09:00
+    changes:
+    - path: Assets/Resources/Image/BaseBackGround.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/BaseBackGround.PNG
+      projectPath: Assets/Resources/Image/BaseBackGround.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/BaseBackGround.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/BaseBackGround.PNG.meta
+      projectPath: Assets/Resources/Image/BaseBackGround.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/ExplanationButton.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/ExplanationButton.PNG
+      projectPath: Assets/Resources/Image/ExplanationButton.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/ExplanationButton.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/ExplanationButton.PNG.meta
+      projectPath: Assets/Resources/Image/ExplanationButton.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/PlayButton.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/PlayButton.PNG
+      projectPath: Assets/Resources/Image/PlayButton.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/PlayButton.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/PlayButton.PNG.meta
+      projectPath: Assets/Resources/Image/PlayButton.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/RuleCursorFocus.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/RuleCursorFocus.PNG
+      projectPath: Assets/Resources/Image/RuleCursorFocus.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/RuleCursorFocus.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/RuleCursorFocus.PNG.meta
+      projectPath: Assets/Resources/Image/RuleCursorFocus.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/RuleCursorNotFocus.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/RuleCursorNotFocus.PNG
+      projectPath: Assets/Resources/Image/RuleCursorNotFocus.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/RuleCursorNotFocus.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/RuleCursorNotFocus.PNG.meta
+      projectPath: Assets/Resources/Image/RuleCursorNotFocus.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/RulePanel.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/RulePanel.PNG
+      projectPath: Assets/Resources/Image/RulePanel.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/RulePanel.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/RulePanel.PNG.meta
+      projectPath: Assets/Resources/Image/RulePanel.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scenes/ExplanationScene.unity
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scenes/ExplanationScene.unity
+      projectPath: Assets/Scenes/ExplanationScene.unity
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets/Scenes/MainScene.unity
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scenes/MainScene.unity
+      projectPath: Assets/Scenes/MainScene.unity
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets/Scenes/MenuScene.unity
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scenes/MenuScene.unity
+      projectPath: Assets/Scenes/MenuScene.unity
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets/Scripts/MenuSceneManager.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/MenuSceneManager.cs
+      projectPath: Assets/Scripts/MenuSceneManager.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/MenuSceneManager.cs.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/MenuSceneManager.cs.meta
+      projectPath: Assets/Scripts/MenuSceneManager.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/PageScrollRect.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/PageScrollRect.cs
+      projectPath: Assets/Scripts/PageScrollRect.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/PageScrollRect.cs.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/PageScrollRect.cs.meta
+      projectPath: Assets/Scripts/PageScrollRect.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/ToExplanationScene.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/ToExplanationScene.cs
+      projectPath: Assets/Scripts/ToExplanationScene.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets/Scripts/ToMainScene.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/ToMainScene.cs
+      projectPath: Assets/Scripts/ToMainScene.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: ProjectSettings/EditorBuildSettings.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/ProjectSettings/EditorBuildSettings.asset
+      projectPath: ProjectSettings/EditorBuildSettings.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: ProjectSettings/TagManager.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/ProjectSettings/TagManager.asset
+      projectPath: ProjectSettings/TagManager.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: UserSettings/EditorUserSettings.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/UserSettings/EditorUserSettings.asset
+      projectPath: UserSettings/EditorUserSettings.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: f1a93e4b3b17b341ba9794ec75e38c446d99dce0
+    mergeA: 
+    mergeB: 
+    authorName: Rina Harai
+    authorEmail: ryoka0902.kg@gmail.com
+    commitEmail: ryoka0902.kg@gmail.com
+    commitName: Rina Harai
+    summary: first commit
+    description: all (User settings)
+    timeString: 2021-11-25T16:28:05.000+09:00
+    commitTimeString: 2021-11-25T16:28:05.000+09:00
+    changes:
+    - path: UserSettings/EditorUserSettings.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/UserSettings/EditorUserSettings.asset
+      projectPath: UserSettings/EditorUserSettings.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+  - commitID: 03cc482b9b1e6f38796833017b067dd8f729ccd8
+    mergeA: 
+    mergeB: 
+    authorName: Rina Harai
+    authorEmail: ryoka0902.kg@gmail.com
+    commitEmail: ryoka0902.kg@gmail.com
+    commitName: Rina Harai
+    summary: first commit.
+    description: all (Projrct setting, Packages, .vscode)
+    timeString: 2021-11-25T16:27:40.000+09:00
+    commitTimeString: 2021-11-25T16:27:40.000+09:00
+    changes:
+    - path: .vscode/settings.json
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/.vscode/settings.json
+      projectPath: .vscode/settings.json
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Packages/manifest.json
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Packages/manifest.json
+      projectPath: Packages/manifest.json
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Packages/packages-lock.json
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Packages/packages-lock.json
+      projectPath: Packages/packages-lock.json
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings/AudioManager.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/ProjectSettings/AudioManager.asset
+      projectPath: ProjectSettings/AudioManager.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings/ClusterInputManager.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/ProjectSettings/ClusterInputManager.asset
+      projectPath: ProjectSettings/ClusterInputManager.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings/DynamicsManager.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/ProjectSettings/DynamicsManager.asset
+      projectPath: ProjectSettings/DynamicsManager.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings/EditorBuildSettings.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/ProjectSettings/EditorBuildSettings.asset
+      projectPath: ProjectSettings/EditorBuildSettings.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings/EditorSettings.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/ProjectSettings/EditorSettings.asset
+      projectPath: ProjectSettings/EditorSettings.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings/GraphicsSettings.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/ProjectSettings/GraphicsSettings.asset
+      projectPath: ProjectSettings/GraphicsSettings.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings/InputManager.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/ProjectSettings/InputManager.asset
+      projectPath: ProjectSettings/InputManager.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings/NavMeshAreas.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/ProjectSettings/NavMeshAreas.asset
+      projectPath: ProjectSettings/NavMeshAreas.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings/NetworkManager.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/ProjectSettings/NetworkManager.asset
+      projectPath: ProjectSettings/NetworkManager.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings/PackageManagerSettings.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/ProjectSettings/PackageManagerSettings.asset
+      projectPath: ProjectSettings/PackageManagerSettings.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings/Physics2DSettings.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/ProjectSettings/Physics2DSettings.asset
+      projectPath: ProjectSettings/Physics2DSettings.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings/PresetManager.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/ProjectSettings/PresetManager.asset
+      projectPath: ProjectSettings/PresetManager.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings/ProjectSettings.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/ProjectSettings/ProjectSettings.asset
+      projectPath: ProjectSettings/ProjectSettings.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings/ProjectVersion.txt
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/ProjectSettings/ProjectVersion.txt
+      projectPath: ProjectSettings/ProjectVersion.txt
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings/QualitySettings.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/ProjectSettings/QualitySettings.asset
+      projectPath: ProjectSettings/QualitySettings.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings/TagManager.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/ProjectSettings/TagManager.asset
+      projectPath: ProjectSettings/TagManager.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings/TimeManager.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/ProjectSettings/TimeManager.asset
+      projectPath: ProjectSettings/TimeManager.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings/UnityConnectSettings.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/ProjectSettings/UnityConnectSettings.asset
+      projectPath: ProjectSettings/UnityConnectSettings.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings/VFXManager.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/ProjectSettings/VFXManager.asset
+      projectPath: ProjectSettings/VFXManager.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings/VersionControlSettings.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/ProjectSettings/VersionControlSettings.asset
+      projectPath: ProjectSettings/VersionControlSettings.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings/XRSettings.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/ProjectSettings/XRSettings.asset
+      projectPath: ProjectSettings/XRSettings.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+  - commitID: 44ce16644a1e85caa3812241bf4328b30220f496
+    mergeA: 
+    mergeB: 
+    authorName: Rina Harai
+    authorEmail: ryoka0902.kg@gmail.com
+    commitEmail: ryoka0902.kg@gmail.com
+    commitName: Rina Harai
+    summary: first commit.
+    description: all
+    timeString: 2021-11-25T16:26:18.000+09:00
+    commitTimeString: 2021-11-25T16:26:18.000+09:00
+    changes:
+    - path: "Assets/CT_\u30DA\u30E9.png"
+      fullPath: "/Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/CT_\u30DA\u30E9.png"
+      projectPath: "Assets/CT_\u30DA\u30E9.png"
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: "Assets/CT_\u30DA\u30E9.png.meta"
+      fullPath: "/Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/CT_\u30DA\u30E9.png.meta"
+      projectPath: "Assets/CT_\u30DA\u30E9.png.meta"
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins.meta
+      projectPath: Assets/Plugins.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub.meta
+      projectPath: Assets/Plugins/GitHub.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor.meta
+      projectPath: Assets/Plugins/GitHub/Editor.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/AsyncBridge.Net35.dll
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/AsyncBridge.Net35.dll
+      projectPath: Assets/Plugins/GitHub/Editor/AsyncBridge.Net35.dll
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/AsyncBridge.Net35.dll.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/AsyncBridge.Net35.dll.meta
+      projectPath: Assets/Plugins/GitHub/Editor/AsyncBridge.Net35.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/ExtensionLoader.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/ExtensionLoader.cs
+      projectPath: Assets/Plugins/GitHub/Editor/ExtensionLoader.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/ExtensionLoader.cs.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/ExtensionLoader.cs.meta
+      projectPath: Assets/Plugins/GitHub/Editor/ExtensionLoader.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/GitHub.Api.45.dll
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/GitHub.Api.45.dll
+      projectPath: Assets/Plugins/GitHub/Editor/GitHub.Api.45.dll
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/GitHub.Api.45.dll.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/GitHub.Api.45.dll.meta
+      projectPath: Assets/Plugins/GitHub/Editor/GitHub.Api.45.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/GitHub.Api.dll
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/GitHub.Api.dll
+      projectPath: Assets/Plugins/GitHub/Editor/GitHub.Api.dll
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/GitHub.Api.dll.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/GitHub.Api.dll.meta
+      projectPath: Assets/Plugins/GitHub/Editor/GitHub.Api.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/GitHub.Logging.dll
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/GitHub.Logging.dll
+      projectPath: Assets/Plugins/GitHub/Editor/GitHub.Logging.dll
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/GitHub.Logging.dll.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/GitHub.Logging.dll.meta
+      projectPath: Assets/Plugins/GitHub/Editor/GitHub.Logging.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/GitHub.Unity.45.dll
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/GitHub.Unity.45.dll
+      projectPath: Assets/Plugins/GitHub/Editor/GitHub.Unity.45.dll
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/GitHub.Unity.45.dll.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/GitHub.Unity.45.dll.meta
+      projectPath: Assets/Plugins/GitHub/Editor/GitHub.Unity.45.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/GitHub.Unity.dll
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/GitHub.Unity.dll
+      projectPath: Assets/Plugins/GitHub/Editor/GitHub.Unity.dll
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/GitHub.Unity.dll.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/GitHub.Unity.dll.meta
+      projectPath: Assets/Plugins/GitHub/Editor/GitHub.Unity.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/GitHub.UnityShim.dll
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/GitHub.UnityShim.dll
+      projectPath: Assets/Plugins/GitHub/Editor/GitHub.UnityShim.dll
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/GitHub.UnityShim.dll.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/GitHub.UnityShim.dll.meta
+      projectPath: Assets/Plugins/GitHub/Editor/GitHub.UnityShim.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/Mono.Posix.dll
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/Mono.Posix.dll
+      projectPath: Assets/Plugins/GitHub/Editor/Mono.Posix.dll
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/Mono.Posix.dll.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/Mono.Posix.dll.meta
+      projectPath: Assets/Plugins/GitHub/Editor/Mono.Posix.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/QuickGuide.pdf
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/QuickGuide.pdf
+      projectPath: Assets/Plugins/GitHub/Editor/QuickGuide.pdf
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/QuickGuide.pdf.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/QuickGuide.pdf.meta
+      projectPath: Assets/Plugins/GitHub/Editor/QuickGuide.pdf.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/ReadOnlyCollectionsInterfaces.dll
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/ReadOnlyCollectionsInterfaces.dll
+      projectPath: Assets/Plugins/GitHub/Editor/ReadOnlyCollectionsInterfaces.dll
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/ReadOnlyCollectionsInterfaces.dll.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/ReadOnlyCollectionsInterfaces.dll.meta
+      projectPath: Assets/Plugins/GitHub/Editor/ReadOnlyCollectionsInterfaces.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/System.Threading.dll
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/System.Threading.dll
+      projectPath: Assets/Plugins/GitHub/Editor/System.Threading.dll
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/System.Threading.dll.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/System.Threading.dll.meta
+      projectPath: Assets/Plugins/GitHub/Editor/System.Threading.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/UnityAPIWrapper.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/UnityAPIWrapper.cs
+      projectPath: Assets/Plugins/GitHub/Editor/UnityAPIWrapper.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/UnityAPIWrapper.cs.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/UnityAPIWrapper.cs.meta
+      projectPath: Assets/Plugins/GitHub/Editor/UnityAPIWrapper.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/big-logo@2x.png
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/big-logo@2x.png
+      projectPath: Assets/Plugins/GitHub/Editor/big-logo@2x.png
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/big-logo@2x.png.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/big-logo@2x.png.meta
+      projectPath: Assets/Plugins/GitHub/Editor/big-logo@2x.png.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/credits.txt
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/credits.txt
+      projectPath: Assets/Plugins/GitHub/Editor/credits.txt
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/credits.txt.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/credits.txt.meta
+      projectPath: Assets/Plugins/GitHub/Editor/credits.txt.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/eula.txt
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/eula.txt
+      projectPath: Assets/Plugins/GitHub/Editor/eula.txt
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/eula.txt.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/eula.txt.meta
+      projectPath: Assets/Plugins/GitHub/Editor/eula.txt.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/libsfw.bundle
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/libsfw.bundle
+      projectPath: Assets/Plugins/GitHub/Editor/libsfw.bundle
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/libsfw.bundle.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/libsfw.bundle.meta
+      projectPath: Assets/Plugins/GitHub/Editor/libsfw.bundle.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/libsfw.so
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/libsfw.so
+      projectPath: Assets/Plugins/GitHub/Editor/libsfw.so
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/libsfw.so.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/libsfw.so.meta
+      projectPath: Assets/Plugins/GitHub/Editor/libsfw.so.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/sfw.net.dll
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/sfw.net.dll
+      projectPath: Assets/Plugins/GitHub/Editor/sfw.net.dll
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/sfw.net.dll.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/sfw.net.dll.meta
+      projectPath: Assets/Plugins/GitHub/Editor/sfw.net.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/x64.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/x64.meta
+      projectPath: Assets/Plugins/GitHub/Editor/x64.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/x64/pthreadVC2.dll
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/x64/pthreadVC2.dll
+      projectPath: Assets/Plugins/GitHub/Editor/x64/pthreadVC2.dll
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/x64/pthreadVC2.dll.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/x64/pthreadVC2.dll.meta
+      projectPath: Assets/Plugins/GitHub/Editor/x64/pthreadVC2.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/x64/sfw_x64.dll
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/x64/sfw_x64.dll
+      projectPath: Assets/Plugins/GitHub/Editor/x64/sfw_x64.dll
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/x64/sfw_x64.dll.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/x64/sfw_x64.dll.meta
+      projectPath: Assets/Plugins/GitHub/Editor/x64/sfw_x64.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/x86.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/x86.meta
+      projectPath: Assets/Plugins/GitHub/Editor/x86.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/x86/pthreadVC2.dll
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/x86/pthreadVC2.dll
+      projectPath: Assets/Plugins/GitHub/Editor/x86/pthreadVC2.dll
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/x86/pthreadVC2.dll.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/x86/pthreadVC2.dll.meta
+      projectPath: Assets/Plugins/GitHub/Editor/x86/pthreadVC2.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/x86/sfw_x86.dll
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/x86/sfw_x86.dll
+      projectPath: Assets/Plugins/GitHub/Editor/x86/sfw_x86.dll
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Plugins/GitHub/Editor/x86/sfw_x86.dll.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Plugins/GitHub/Editor/x86/sfw_x86.dll.meta
+      projectPath: Assets/Plugins/GitHub/Editor/x86/sfw_x86.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources.meta
+      projectPath: Assets/Resources.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/AcceptButton.prefab
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/AcceptButton.prefab
+      projectPath: Assets/Resources/AcceptButton.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/AcceptButton.prefab.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/AcceptButton.prefab.meta
+      projectPath: Assets/Resources/AcceptButton.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Card.prefab
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Card.prefab
+      projectPath: Assets/Resources/Card.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Card.prefab.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Card.prefab.meta
+      projectPath: Assets/Resources/Card.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList.meta
+      projectPath: Assets/Resources/CardEntityList.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card1.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card1.asset
+      projectPath: Assets/Resources/CardEntityList/Card1.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card1.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card1.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card1.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card10.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card10.asset
+      projectPath: Assets/Resources/CardEntityList/Card10.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card10.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card10.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card10.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card11.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card11.asset
+      projectPath: Assets/Resources/CardEntityList/Card11.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card11.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card11.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card11.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card12.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card12.asset
+      projectPath: Assets/Resources/CardEntityList/Card12.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card12.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card12.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card12.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card13.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card13.asset
+      projectPath: Assets/Resources/CardEntityList/Card13.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card13.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card13.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card13.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card14.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card14.asset
+      projectPath: Assets/Resources/CardEntityList/Card14.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card14.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card14.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card14.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card15.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card15.asset
+      projectPath: Assets/Resources/CardEntityList/Card15.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card15.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card15.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card15.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card16.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card16.asset
+      projectPath: Assets/Resources/CardEntityList/Card16.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card16.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card16.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card16.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card17.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card17.asset
+      projectPath: Assets/Resources/CardEntityList/Card17.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card17.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card17.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card17.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card18.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card18.asset
+      projectPath: Assets/Resources/CardEntityList/Card18.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card18.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card18.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card18.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card19.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card19.asset
+      projectPath: Assets/Resources/CardEntityList/Card19.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card19.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card19.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card19.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card2.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card2.asset
+      projectPath: Assets/Resources/CardEntityList/Card2.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card2.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card2.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card2.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card20.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card20.asset
+      projectPath: Assets/Resources/CardEntityList/Card20.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card20.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card20.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card20.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card21.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card21.asset
+      projectPath: Assets/Resources/CardEntityList/Card21.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card21.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card21.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card21.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card22.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card22.asset
+      projectPath: Assets/Resources/CardEntityList/Card22.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card22.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card22.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card22.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card23.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card23.asset
+      projectPath: Assets/Resources/CardEntityList/Card23.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card23.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card23.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card23.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card24.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card24.asset
+      projectPath: Assets/Resources/CardEntityList/Card24.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card24.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card24.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card24.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card25.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card25.asset
+      projectPath: Assets/Resources/CardEntityList/Card25.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card25.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card25.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card25.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card26.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card26.asset
+      projectPath: Assets/Resources/CardEntityList/Card26.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card26.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card26.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card26.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card27.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card27.asset
+      projectPath: Assets/Resources/CardEntityList/Card27.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card27.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card27.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card27.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card28.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card28.asset
+      projectPath: Assets/Resources/CardEntityList/Card28.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card28.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card28.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card28.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card29.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card29.asset
+      projectPath: Assets/Resources/CardEntityList/Card29.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card29.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card29.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card29.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card3.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card3.asset
+      projectPath: Assets/Resources/CardEntityList/Card3.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card3.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card3.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card3.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card30.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card30.asset
+      projectPath: Assets/Resources/CardEntityList/Card30.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card30.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card30.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card30.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card31.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card31.asset
+      projectPath: Assets/Resources/CardEntityList/Card31.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card31.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card31.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card31.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card32.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card32.asset
+      projectPath: Assets/Resources/CardEntityList/Card32.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card32.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card32.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card32.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card33.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card33.asset
+      projectPath: Assets/Resources/CardEntityList/Card33.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card33.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card33.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card33.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card34.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card34.asset
+      projectPath: Assets/Resources/CardEntityList/Card34.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card34.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card34.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card34.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card35.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card35.asset
+      projectPath: Assets/Resources/CardEntityList/Card35.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card35.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card35.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card35.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card36.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card36.asset
+      projectPath: Assets/Resources/CardEntityList/Card36.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card36.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card36.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card36.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card37.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card37.asset
+      projectPath: Assets/Resources/CardEntityList/Card37.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card37.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card37.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card37.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card38.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card38.asset
+      projectPath: Assets/Resources/CardEntityList/Card38.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card38.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card38.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card38.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card39.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card39.asset
+      projectPath: Assets/Resources/CardEntityList/Card39.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card39.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card39.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card39.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card4.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card4.asset
+      projectPath: Assets/Resources/CardEntityList/Card4.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card4.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card4.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card4.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card40.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card40.asset
+      projectPath: Assets/Resources/CardEntityList/Card40.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card40.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card40.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card40.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card5.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card5.asset
+      projectPath: Assets/Resources/CardEntityList/Card5.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card5.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card5.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card5.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card6.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card6.asset
+      projectPath: Assets/Resources/CardEntityList/Card6.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card6.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card6.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card6.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card7.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card7.asset
+      projectPath: Assets/Resources/CardEntityList/Card7.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card7.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card7.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card7.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card8.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card8.asset
+      projectPath: Assets/Resources/CardEntityList/Card8.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card8.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card8.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card8.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card9.asset
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card9.asset
+      projectPath: Assets/Resources/CardEntityList/Card9.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/CardEntityList/Card9.asset.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/CardEntityList/Card9.asset.meta
+      projectPath: Assets/Resources/CardEntityList/Card9.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image.meta
+      projectPath: Assets/Resources/Image.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/Piece.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/Piece.meta
+      projectPath: Assets/Resources/Image/Piece.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/Piece/blossomPiece.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/Piece/blossomPiece.PNG
+      projectPath: Assets/Resources/Image/Piece/blossomPiece.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/Piece/blossomPiece.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/Piece/blossomPiece.PNG.meta
+      projectPath: Assets/Resources/Image/Piece/blossomPiece.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/Piece/circlePiece.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/Piece/circlePiece.PNG
+      projectPath: Assets/Resources/Image/Piece/circlePiece.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/Piece/circlePiece.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/Piece/circlePiece.PNG.meta
+      projectPath: Assets/Resources/Image/Piece/circlePiece.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/Piece/hexagonalPiece.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/Piece/hexagonalPiece.PNG
+      projectPath: Assets/Resources/Image/Piece/hexagonalPiece.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/Piece/hexagonalPiece.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/Piece/hexagonalPiece.PNG.meta
+      projectPath: Assets/Resources/Image/Piece/hexagonalPiece.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/Piece/starPiece.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/Piece/starPiece.PNG
+      projectPath: Assets/Resources/Image/Piece/starPiece.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/Piece/starPiece.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/Piece/starPiece.PNG.meta
+      projectPath: Assets/Resources/Image/Piece/starPiece.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/ResultBackGround.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/ResultBackGround.PNG
+      projectPath: Assets/Resources/Image/ResultBackGround.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/ResultBackGround.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/ResultBackGround.PNG.meta
+      projectPath: Assets/Resources/Image/ResultBackGround.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/SwapButton.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/SwapButton.PNG
+      projectPath: Assets/Resources/Image/SwapButton.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/SwapButton.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/SwapButton.PNG.meta
+      projectPath: Assets/Resources/Image/SwapButton.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/background.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/background.PNG
+      projectPath: Assets/Resources/Image/background.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/Image/background.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/Image/background.PNG.meta
+      projectPath: Assets/Resources/Image/background.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/RejectButton.prefab
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/RejectButton.prefab
+      projectPath: Assets/Resources/RejectButton.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/RejectButton.prefab.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/RejectButton.prefab.meta
+      projectPath: Assets/Resources/RejectButton.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/blossom1.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/blossom1.PNG
+      projectPath: Assets/Resources/blossom1.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/blossom1.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/blossom1.PNG.meta
+      projectPath: Assets/Resources/blossom1.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/blossom1.prefab
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/blossom1.prefab
+      projectPath: Assets/Resources/blossom1.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/blossom1.prefab.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/blossom1.prefab.meta
+      projectPath: Assets/Resources/blossom1.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/blossom2.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/blossom2.PNG
+      projectPath: Assets/Resources/blossom2.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/blossom2.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/blossom2.PNG.meta
+      projectPath: Assets/Resources/blossom2.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/blossom2.prefab
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/blossom2.prefab
+      projectPath: Assets/Resources/blossom2.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/blossom2.prefab.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/blossom2.prefab.meta
+      projectPath: Assets/Resources/blossom2.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/blossom3.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/blossom3.PNG
+      projectPath: Assets/Resources/blossom3.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/blossom3.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/blossom3.PNG.meta
+      projectPath: Assets/Resources/blossom3.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/blossom3.prefab
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/blossom3.prefab
+      projectPath: Assets/Resources/blossom3.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/blossom3.prefab.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/blossom3.prefab.meta
+      projectPath: Assets/Resources/blossom3.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/blossom4.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/blossom4.PNG
+      projectPath: Assets/Resources/blossom4.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/blossom4.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/blossom4.PNG.meta
+      projectPath: Assets/Resources/blossom4.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/blossom4.prefab
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/blossom4.prefab
+      projectPath: Assets/Resources/blossom4.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/blossom4.prefab.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/blossom4.prefab.meta
+      projectPath: Assets/Resources/blossom4.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/blossomComplete.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/blossomComplete.PNG
+      projectPath: Assets/Resources/blossomComplete.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/blossomComplete.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/blossomComplete.PNG.meta
+      projectPath: Assets/Resources/blossomComplete.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/blossomComplete.prefab
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/blossomComplete.prefab
+      projectPath: Assets/Resources/blossomComplete.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/blossomComplete.prefab.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/blossomComplete.prefab.meta
+      projectPath: Assets/Resources/blossomComplete.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/circle1.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/circle1.PNG
+      projectPath: Assets/Resources/circle1.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/circle1.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/circle1.PNG.meta
+      projectPath: Assets/Resources/circle1.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/circle1.prefab
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/circle1.prefab
+      projectPath: Assets/Resources/circle1.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/circle1.prefab.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/circle1.prefab.meta
+      projectPath: Assets/Resources/circle1.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/circleComplete.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/circleComplete.PNG
+      projectPath: Assets/Resources/circleComplete.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/circleComplete.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/circleComplete.PNG.meta
+      projectPath: Assets/Resources/circleComplete.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/circleComplete.prefab
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/circleComplete.prefab
+      projectPath: Assets/Resources/circleComplete.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/circleComplete.prefab.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/circleComplete.prefab.meta
+      projectPath: Assets/Resources/circleComplete.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/hexagon1.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/hexagon1.PNG
+      projectPath: Assets/Resources/hexagon1.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/hexagon1.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/hexagon1.PNG.meta
+      projectPath: Assets/Resources/hexagon1.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/hexagon1.prefab
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/hexagon1.prefab
+      projectPath: Assets/Resources/hexagon1.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/hexagon1.prefab.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/hexagon1.prefab.meta
+      projectPath: Assets/Resources/hexagon1.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/hexagon2.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/hexagon2.PNG
+      projectPath: Assets/Resources/hexagon2.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/hexagon2.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/hexagon2.PNG.meta
+      projectPath: Assets/Resources/hexagon2.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/hexagon2.prefab
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/hexagon2.prefab
+      projectPath: Assets/Resources/hexagon2.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/hexagon2.prefab.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/hexagon2.prefab.meta
+      projectPath: Assets/Resources/hexagon2.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/hexagon3.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/hexagon3.PNG
+      projectPath: Assets/Resources/hexagon3.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/hexagon3.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/hexagon3.PNG.meta
+      projectPath: Assets/Resources/hexagon3.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/hexagon3.prefab
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/hexagon3.prefab
+      projectPath: Assets/Resources/hexagon3.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/hexagon3.prefab.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/hexagon3.prefab.meta
+      projectPath: Assets/Resources/hexagon3.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/hexagon4.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/hexagon4.PNG
+      projectPath: Assets/Resources/hexagon4.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/hexagon4.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/hexagon4.PNG.meta
+      projectPath: Assets/Resources/hexagon4.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/hexagon4.prefab
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/hexagon4.prefab
+      projectPath: Assets/Resources/hexagon4.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/hexagon4.prefab.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/hexagon4.prefab.meta
+      projectPath: Assets/Resources/hexagon4.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/hexagon5.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/hexagon5.PNG
+      projectPath: Assets/Resources/hexagon5.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/hexagon5.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/hexagon5.PNG.meta
+      projectPath: Assets/Resources/hexagon5.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/hexagon5.prefab
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/hexagon5.prefab
+      projectPath: Assets/Resources/hexagon5.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/hexagon5.prefab.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/hexagon5.prefab.meta
+      projectPath: Assets/Resources/hexagon5.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/hexagonComplete.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/hexagonComplete.PNG
+      projectPath: Assets/Resources/hexagonComplete.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/hexagonComplete.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/hexagonComplete.PNG.meta
+      projectPath: Assets/Resources/hexagonComplete.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/hexagonComplete.prefab
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/hexagonComplete.prefab
+      projectPath: Assets/Resources/hexagonComplete.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/hexagonComplete.prefab.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/hexagonComplete.prefab.meta
+      projectPath: Assets/Resources/hexagonComplete.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/star1.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/star1.PNG
+      projectPath: Assets/Resources/star1.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/star1.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/star1.PNG.meta
+      projectPath: Assets/Resources/star1.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/star1.prefab
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/star1.prefab
+      projectPath: Assets/Resources/star1.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/star1.prefab.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/star1.prefab.meta
+      projectPath: Assets/Resources/star1.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/star2.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/star2.PNG
+      projectPath: Assets/Resources/star2.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/star2.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/star2.PNG.meta
+      projectPath: Assets/Resources/star2.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/star2.prefab
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/star2.prefab
+      projectPath: Assets/Resources/star2.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/star2.prefab.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/star2.prefab.meta
+      projectPath: Assets/Resources/star2.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/star3.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/star3.PNG
+      projectPath: Assets/Resources/star3.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/star3.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/star3.PNG.meta
+      projectPath: Assets/Resources/star3.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/star3.prefab
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/star3.prefab
+      projectPath: Assets/Resources/star3.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/star3.prefab.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/star3.prefab.meta
+      projectPath: Assets/Resources/star3.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/star4.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/star4.PNG
+      projectPath: Assets/Resources/star4.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/star4.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/star4.PNG.meta
+      projectPath: Assets/Resources/star4.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/star4.prefab
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/star4.prefab
+      projectPath: Assets/Resources/star4.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/star4.prefab.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/star4.prefab.meta
+      projectPath: Assets/Resources/star4.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/starComplete.PNG
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/starComplete.PNG
+      projectPath: Assets/Resources/starComplete.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/starComplete.PNG.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/starComplete.PNG.meta
+      projectPath: Assets/Resources/starComplete.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/starComplete.prefab
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/starComplete.prefab
+      projectPath: Assets/Resources/starComplete.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Resources/starComplete.prefab.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Resources/starComplete.prefab.meta
+      projectPath: Assets/Resources/starComplete.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scenes.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scenes.meta
+      projectPath: Assets/Scenes.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scenes/ExplanationScene.unity
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scenes/ExplanationScene.unity
+      projectPath: Assets/Scenes/ExplanationScene.unity
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scenes/ExplanationScene.unity.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scenes/ExplanationScene.unity.meta
+      projectPath: Assets/Scenes/ExplanationScene.unity.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scenes/MainScene.unity
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scenes/MainScene.unity
+      projectPath: Assets/Scenes/MainScene.unity
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scenes/MainScene.unity.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scenes/MainScene.unity.meta
+      projectPath: Assets/Scenes/MainScene.unity.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scenes/MenuScene.unity
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scenes/MenuScene.unity
+      projectPath: Assets/Scenes/MenuScene.unity
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scenes/MenuScene.unity.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scenes/MenuScene.unity.meta
+      projectPath: Assets/Scenes/MenuScene.unity.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scenes/ResultScene.unity
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scenes/ResultScene.unity
+      projectPath: Assets/Scenes/ResultScene.unity
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scenes/ResultScene.unity.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scenes/ResultScene.unity.meta
+      projectPath: Assets/Scenes/ResultScene.unity.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts.meta
+      projectPath: Assets/Scripts.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/CardController.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/CardController.cs
+      projectPath: Assets/Scripts/CardController.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/CardController.cs.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/CardController.cs.meta
+      projectPath: Assets/Scripts/CardController.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/CardEntity.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/CardEntity.cs
+      projectPath: Assets/Scripts/CardEntity.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/CardEntity.cs.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/CardEntity.cs.meta
+      projectPath: Assets/Scripts/CardEntity.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/CardList.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/CardList.cs
+      projectPath: Assets/Scripts/CardList.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/CardList.cs.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/CardList.cs.meta
+      projectPath: Assets/Scripts/CardList.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/CardModel.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/CardModel.cs
+      projectPath: Assets/Scripts/CardModel.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/CardModel.cs.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/CardModel.cs.meta
+      projectPath: Assets/Scripts/CardModel.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/CardMovement.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/CardMovement.cs
+      projectPath: Assets/Scripts/CardMovement.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/CardMovement.cs.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/CardMovement.cs.meta
+      projectPath: Assets/Scripts/CardMovement.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/CardView.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/CardView.cs
+      projectPath: Assets/Scripts/CardView.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/CardView.cs.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/CardView.cs.meta
+      projectPath: Assets/Scripts/CardView.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/CountDownTime.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/CountDownTime.cs
+      projectPath: Assets/Scripts/CountDownTime.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/CountDownTime.cs.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/CountDownTime.cs.meta
+      projectPath: Assets/Scripts/CountDownTime.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/DropPlace.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/DropPlace.cs
+      projectPath: Assets/Scripts/DropPlace.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/DropPlace.cs.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/DropPlace.cs.meta
+      projectPath: Assets/Scripts/DropPlace.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/FieldCard.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/FieldCard.cs
+      projectPath: Assets/Scripts/FieldCard.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/FieldCard.cs.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/FieldCard.cs.meta
+      projectPath: Assets/Scripts/FieldCard.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/InputFieldEvent.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/InputFieldEvent.cs
+      projectPath: Assets/Scripts/InputFieldEvent.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/InputFieldEvent.cs.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/InputFieldEvent.cs.meta
+      projectPath: Assets/Scripts/InputFieldEvent.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/InputTextRaycast.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/InputTextRaycast.cs
+      projectPath: Assets/Scripts/InputTextRaycast.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/InputTextRaycast.cs.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/InputTextRaycast.cs.meta
+      projectPath: Assets/Scripts/InputTextRaycast.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/JudgeButtunAction.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/JudgeButtunAction.cs
+      projectPath: Assets/Scripts/JudgeButtunAction.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/JudgeButtunAction.cs.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/JudgeButtunAction.cs.meta
+      projectPath: Assets/Scripts/JudgeButtunAction.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/ResultSceneManager.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/ResultSceneManager.cs
+      projectPath: Assets/Scripts/ResultSceneManager.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/ResultSceneManager.cs.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/ResultSceneManager.cs.meta
+      projectPath: Assets/Scripts/ResultSceneManager.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/SwapAllCard.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/SwapAllCard.cs
+      projectPath: Assets/Scripts/SwapAllCard.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/SwapAllCard.cs.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/SwapAllCard.cs.meta
+      projectPath: Assets/Scripts/SwapAllCard.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/TextInput.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/TextInput.cs
+      projectPath: Assets/Scripts/TextInput.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/TextInput.cs.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/TextInput.cs.meta
+      projectPath: Assets/Scripts/TextInput.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/ToExplanationScene.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/ToExplanationScene.cs
+      projectPath: Assets/Scripts/ToExplanationScene.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/ToExplanationScene.cs.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/ToExplanationScene.cs.meta
+      projectPath: Assets/Scripts/ToExplanationScene.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/ToMainScene.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/ToMainScene.cs
+      projectPath: Assets/Scripts/ToMainScene.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/ToMainScene.cs.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/ToMainScene.cs.meta
+      projectPath: Assets/Scripts/ToMainScene.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/ToResultScene.cs
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/ToResultScene.cs
+      projectPath: Assets/Scripts/ToResultScene.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scripts/ToResultScene.cs.meta
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/Scripts/ToResultScene.cs.meta
+      projectPath: Assets/Scripts/ToResultScene.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+  - commitID: 376acb6448ace41924a2eba8138fde25270ba951
+    mergeA: 
+    mergeB: 
+    authorName: Rina Harai
+    authorEmail: ryoka0902.kg@gmail.com
+    commitEmail: ryoka0902.kg@gmail.com
+    commitName: Rina Harai
+    summary: Initial commit
+    description: 
+    timeString: 2021-11-25T15:48:49.000+09:00
+    commitTimeString: 2021-11-25T15:48:49.000+09:00
+    changes:
+    - path: .gitattributes
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/.gitattributes
+      projectPath: .gitattributes
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: .gitignore
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/.gitignore
+      projectPath: .gitignore
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/.gitignore
+      fullPath: /Users/rina/Desktop/git/Unity_KotoPro/KotoPro/Assets/.gitignore
+      projectPath: Assets/.gitignore
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0

@@ -17,7 +17,7 @@ public class TextInput : MonoBehaviour
 
     public void InputText()
     {
-        text.text = inputField.text;
+        //text.text = inputField.text;
         Debug.Log("Type: " + inputField.text.GetType());
         //テキストにinputFieldの内容を反映
 

@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+using DG.Tweening;
+
 public class CardList : MonoBehaviour
 {
 
@@ -15,7 +17,8 @@ public class CardList : MonoBehaviour
             cardFieldTransform5,
             cardFieldTransform6,
             cardFieldTransform7,
-            cardFieldTransform8;
+            cardFieldTransform8,
+            SpawnFieldTransform;
     [SerializeField] Transform[] cardFieldTransform = new Transform[8];
     [SerializeField] Transform KeepCardPlayer1Transform;
     [SerializeField] Transform KeepCardPlayer2Transform;
@@ -30,8 +33,10 @@ public class CardList : MonoBehaviour
     [SerializeField] GameObject acceptButtonPrefab;
     [SerializeField] GameObject rejectButtonPrefab;
     [SerializeField] Text answerText;
+    [SerializeField] AudioClip cardSpawnSound;
     public GameObject canvas;
     public GameObject AcceptObjk, RejectObjk;
+    public GameObject blockRaycast;
     public static int playerNum;
     JudgeButtunAction judgeButtunAction;
     string fieldNumber;
@@ -41,6 +46,7 @@ public class CardList : MonoBehaviour
 
     void Start()
     {
+        blockRaycast.GetComponent<Image>().raycastTarget = false;
         Debug.Log(answerTextStr);
         StartGame();
     }
@@ -59,11 +65,16 @@ public class CardList : MonoBehaviour
         SpawnCard(cardFieldTransform8);
         */
 
-        for (int i = 0; i < cardFieldTransform.Length; i++)
+        /*
+        for (int i = 0; i < cardFieldTransform.Length;)
         {
             SpawnCard(cardFieldTransform[i]);
-        }
+            Debug.Log(i);
+            //StartCoroutine(Interval(i));
 
+        }
+        */
+        StartCoroutine("SpawnAllCards");
 
     }
     void Update()
@@ -144,9 +155,10 @@ public class CardList : MonoBehaviour
 
                     break;
                 case 2:
-                    textInputPlayer2.inputField.text = answerText.text;
+                    answerText.text = textInputPlayer2.inputField.text;
+                    //textInputPlayer2.inputField.text = answerText.text;
                     answerTextStr = textInputPlayer2.inputField.text;
-                    Debug.Log("Player2の入力内容" + answerTextStr);
+                    Debug.Log("Player2の入力内容" + answerTextStr.ToString());
 
                     break;
                 default:
@@ -203,39 +215,73 @@ public class CardList : MonoBehaviour
             SpawnCard(cardFieldTransform);
         }
     }
+
     public void SpawnCard(Transform spawnArea)　// カードを生成
     {
-        CardController card = Instantiate(cardPrefab, spawnArea, false);
+
+        Debug.Log("Spawn");
+        CardController card = Instantiate(cardPrefab, SpawnFieldTransform, false);
+
         card.Init(deckNumber);
+        float posX = spawnArea.position.x;
+        float posY = spawnArea.position.y;
+        cardPrefab.GetComponent<Transform>().position = new Vector2(posX, posY);
+        //StartCoroutine(IntervalAnimation(spawnArea, card));
+        //CardController cardController = 
+        /*
+        SpawnAnimation(spawnArea, card, posX, posY);
+        card.transform.SetParent(spawnArea, false);
+        
+        */
+        StartCoroutine(IntervalAnimation(spawnArea, card, posX, posY));
         if (deckNumber < 44)
         {
             deckNumber++;
+
         }
         else
         {
             Scoreing();
         }
-        //Debug.Log(deckNumber);
+    }
+    void SpawnAnimation(Transform cardFieldTransform, CardController cardPrefab, float posX, float posY)
+    {
 
-        /*
-        for (int i = 0; i < 4; i++) // 3回繰り返す
+        // カードの移動先を設定
+        //float posX = (this.GridLayout.cellSize.x * this.mWidthIdx) + (this.GridLayout.spacing.x * (this.mWidthIdx + 1));
+        //float posY = ((this.GridLayout.cellSize.y * this.mHelgthIdx) + (this.GridLayout.spacing.y * this.mHelgthIdx)) * -1f;
+
+        // カードの初期値を設定 (画面外にする)
+        //cardPrefab.mRt.anchoredPosition = new Vector2(1900, 0f);
+        cardPrefab.GetComponent<Transform>().DOMove(new Vector2(posX, posY), 0.3f);
+        GetComponent<AudioSource>().PlayOneShot(cardSpawnSound);
+        // DOAnchorPosでアニメーションを行う
+        //cardPrefab.mRt.DOAnchorPos(new Vector2(posX, posY), this.DEAL_CAED_TIME);
+    }
+    IEnumerator IntervalAnimation(Transform cardFieldTransform, CardController cardPrefab, float posX, float posY)
+    {
+        cardPrefab.GetComponent<CanvasGroup>().blocksRaycasts = false;
+        //ここに処理を書く
+        SpawnAnimation(cardFieldTransform, cardPrefab, posX, posY);
+
+        //1フレーム停止
+        yield return new WaitForSeconds(0.2f);
+        cardPrefab.transform.SetParent(cardFieldTransform, false);
+        cardPrefab.GetComponent<CanvasGroup>().blocksRaycasts = true;
+
+        //SpawnAnimation(cardFieldTransform, cardPrefab);
+        //ここに再開後の処理を書く
+    }
+    IEnumerator SpawnAllCards()
+    {
+        for (int i = 0; i < cardFieldTransform.Length;)
         {
-            
-            if(i%5 == 0){
-                Instantiate(Cards[i], new Vector3(100.0f, 100.0f, 0), Quaternion.identity); // カード生成
-                Debug.Log("aaa" + Cards[i].transform.position.x);
-            }else if(i%5 == 1){
-                Instantiate(Cards[i], new Vector3(0, 0), Quaternion.identity); // カード生成
-            }else if(i%5 == 2){
-                Instantiate(Cards[i], new Vector3(20, 20), Quaternion.identity); // カード生成
-            }else if(i%5 == 3){
-                Instantiate(Cards[i], new Vector3(30, 30), Quaternion.identity); // カード生成
-            }else if(i%5 == 4){
-                Instantiate(Cards[i], new Vector3(50, 50), Quaternion.identity); // カード生成
-            }
-            
-            
-        }*/
+            SpawnCard(cardFieldTransform[i]);
+            Debug.Log(i);
+            yield return new WaitForSeconds(0.3f);
+            i++;
+        }
+
     }
 
     void JudgeByOpponent(int playerNumber)
@@ -244,6 +290,9 @@ public class CardList : MonoBehaviour
         AcceptObjk.transform.SetParent(canvas.transform, false);
         RejectObjk = Instantiate(rejectButtonPrefab);
         RejectObjk.transform.SetParent(canvas.transform, false);
+
+        blockRaycast.GetComponent<Image>().raycastTarget = true;
+
 
         //キープカードをすべて消す
 
